@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,42 +14,45 @@
             background-size: cover;
             background-position: center;
         }
-        
+
         .chart-container {
             position: relative;
             height: 300px;
             width: 100%;
         }
-        
+
         .dropdown:hover .dropdown-menu {
             display: block;
         }
-        
+
         .active-nav {
             border-bottom: 3px solid #3b82f6;
         }
     </style>
 </head>
+
 <body class="font-sans bg-gray-50">
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/logo.jpg" alt="Logo Kelurahan Bila" class="h-12 mr-3">
+                <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/logo.jpg"
+                    alt="Logo Kelurahan Bila" class="h-12 mr-3">
                 <div>
                     <h1 class="text-xl font-bold text-gray-800">KELURAHAN BILA</h1>
                     <p class="text-xs text-gray-600">Kec. Lalabata, Kab. Soppeng</p>
                 </div>
             </div>
-            
+
             <!-- Mobile menu button -->
             <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
-            
+
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex space-x-1">
-                <a href="#beranda" class="px-4 py-2 text-gray-700 hover:text-blue-600 font-medium active-nav">Beranda</a>
+                <a href="#beranda"
+                    class="px-4 py-2 text-gray-700 hover:text-blue-600 font-medium active-nav">Beranda</a>
                 <div class="dropdown relative">
                     <button class="px-4 py-2 text-gray-700 hover:text-blue-600 font-medium flex items-center">
                         Profil <i class="fas fa-chevron-down ml-1 text-xs"></i>
@@ -56,7 +60,8 @@
                     <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded mt-1 py-1 w-48">
                         <a href="#profil" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profil Kelurahan</a>
                         <a href="#visi-misi" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Visi & Misi</a>
-                        <a href="#struktur" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Struktur Organisasi</a>
+                        <a href="#struktur" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Struktur
+                            Organisasi</a>
                     </div>
                 </div>
                 <a href="#statistik" class="px-4 py-2 text-gray-700 hover:text-blue-600 font-medium">Data Statistik</a>
@@ -65,13 +70,14 @@
                 <a href="#kontak" class="px-4 py-2 text-gray-700 hover:text-blue-600 font-medium">Kontak</a>
             </nav>
         </div>
-        
+
         <!-- Mobile Navigation -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
             <div class="container mx-auto px-4 py-2 flex flex-col">
                 <a href="#beranda" class="px-4 py-2 text-gray-700 hover:bg-gray-100">Beranda</a>
                 <div class="px-4 py-2">
-                    <button class="flex items-center justify-between w-full text-gray-700" onclick="toggleDropdown('profil-dropdown')">
+                    <button class="flex items-center justify-between w-full text-gray-700"
+                        onclick="toggleDropdown('profil-dropdown')">
                         Profil <i class="fas fa-chevron-down ml-1 text-xs"></i>
                     </button>
                     <div id="profil-dropdown" class="hidden pl-4 mt-1">
@@ -93,11 +99,14 @@
         <div class="container mx-auto px-4 text-center">
             <h1 class="text-3xl md:text-5xl font-bold mb-4">Selamat Datang di Website Resmi</h1>
             <h2 class="text-2xl md:text-4xl font-semibold mb-6">Kelurahan Bila, Kec. Lalabata</h2>
-            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Portal informasi resmi Kelurahan Bila untuk warga dan masyarakat umum</p>
-            
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Portal informasi resmi Kelurahan Bila untuk warga dan
+                masyarakat umum</p>
+
             <div class="relative max-w-md mx-auto">
-                <input type="text" placeholder="Cari informasi..." class="w-full py-3 px-4 rounded-full text-gray-800 focus:outline-none">
-                <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full">
+                <input type="text" placeholder="Cari informasi..."
+                    class="w-full py-3 px-4 rounded-full text-gray-800 focus:outline-none">
+                <button
+                    class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-2 rounded-full">
                     <i class="fas fa-search"></i>
                 </button>
             </div>
@@ -114,7 +123,7 @@
                 <a href="#statistik" class="flex items-center hover:underline">
                     <i class="fas fa-chart-bar mr-2"></i> Data Statistik
                 </a>
-         
+
                 <a href="#kontak" class="flex items-center hover:underline">
                     <i class="fas fa-phone-alt mr-2"></i> Kontak Darurat
                 </a>
@@ -129,23 +138,29 @@
             <div class="flex flex-col md:flex-row items-center mb-8">
                 <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
                     <h2 class="text-3xl font-bold text-gray-800 mb-4">Profil Kelurahan Bila</h2>
-                    <p class="text-gray-600 mb-4">Kelurahan Bila merupakan salah satu kelurahan di Kecamatan Lalabata, Kabupaten Soppeng, Provinsi Sulawesi Selatan. Kelurahan ini memiliki potensi yang besar di bidang pertanian dan perdagangan.</p>
-                    <p class="text-gray-600">Dengan luas wilayah sekitar 3.500 hektar, Kelurahan Bila dihuni oleh 3.779 Penduduk Laki-Laki, dan 4.023 Penduduk Perempuan. Kelurahan ini terus berkembang dengan dukungan pemerintah setempat dan partisipasi aktif masyarakat.</p>
+                    <p class="text-gray-600 mb-4">Kelurahan Bila merupakan salah satu kelurahan di Kecamatan Lalabata,
+                        Kabupaten Soppeng, Provinsi Sulawesi Selatan. Kelurahan ini memiliki potensi yang besar di
+                        bidang pertanian dan perdagangan.</p>
+                    <p class="text-gray-600">Dengan luas wilayah sekitar 3.500 hektar, Kelurahan Bila dihuni oleh 3.779
+                        Penduduk Laki-Laki, dan 4.023 Penduduk Perempuan. Kelurahan ini terus berkembang dengan dukungan
+                        pemerintah setempat dan partisipasi aktif masyarakat.</p>
                 </div>
                 <div class="md:w-1/2">
-                    <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/villa.jpg" alt="Pemandangan Kelurahan Bila" class="rounded-lg shadow-md w-full">
+                    <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/villa.jpg"
+                        alt="Pemandangan Kelurahan Bila" class="rounded-lg shadow-md w-full">
                 </div>
             </div>
-            
+
             <!-- Visi Misi -->
             <div id="visi-misi" class="bg-white p-6 rounded-lg shadow-md mb-8">
                 <h3 class="text-2xl font-bold text-gray-800 mb-4">Visi & Misi Kelurahan Bila</h3>
-                
+
                 <div class="mb-6">
                     <h4 class="text-xl font-semibold text-blue-600 mb-2">Visi</h4>
-                    <p class="text-gray-700">"Mewujudkan Kelurahan Bila yang Maju, Mandiri, dan Berbudaya melalui Pemerintahan yang Bersih, Transparan, dan Akuntabel"</p>
+                    <p class="text-gray-700">"Mewujudkan Kelurahan Bila yang Maju, Mandiri, dan Berbudaya melalui
+                        Pemerintahan yang Bersih, Transparan, dan Akuntabel"</p>
                 </div>
-                
+
                 <div>
                     <h4 class="text-xl font-semibold text-blue-600 mb-2">Misi</h4>
                     <ul class="list-disc pl-5 text-gray-700 space-y-2">
@@ -157,11 +172,11 @@
                     </ul>
                 </div>
             </div>
-            
+
             <!-- Struktur Organisasi -->
             <div id="struktur" class="bg-white p-6 rounded-lg shadow-md">
                 <h3 class="text-2xl font-bold text-gray-800 mb-6">Struktur Organisasi Kelurahan Bila</h3>
-                
+
                 <div class="overflow-x-auto">
                     <table class="min-w-full bg-white border border-gray-200">
                         <thead class="bg-gray-100">
@@ -197,11 +212,11 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Data Statistik -->
         <section id="statistik" class="mb-16">
             <h2 class="text-3xl font-bold text-gray-800 mb-8">Data Statistik Kelurahan Bila</h2>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <!-- Jumlah Penduduk -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
@@ -217,7 +232,7 @@
                         <i class="fas fa-download mr-2"></i> Unduh Data
                     </button>
                 </div>
-                
+
                 <!-- Distribusi Gender dan Umur -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-xl font-semibold text-gray-800 mb-4">Distribusi Gender dan Umur</h3>
@@ -245,7 +260,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 <!-- Mata Pencaharian -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
@@ -256,11 +271,12 @@
                     <div class="mt-4 text-sm space-y-1">
                         <p class="flex justify-between"><span>Perdagangan</span> <span class="font-bold">42%</span></p>
                         <p class="flex justify-between"><span>Pertanian</span> <span class="font-bold">28%</span></p>
-                        <p class="flex justify-between"><span>PNS/TNI/Polri</span> <span class="font-bold">12%</span></p>
+                        <p class="flex justify-between"><span>PNS/TNI/Polri</span> <span class="font-bold">12%</span>
+                        </p>
                         <p class="flex justify-between"><span>Lainnya</span> <span class="font-bold">18%</span></p>
                     </div>
                 </div>
-                
+
                 <!-- Tingkat Pendidikan -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-xl font-semibold text-gray-800 mb-4">Tingkat Pendidikan</h3>
@@ -274,7 +290,7 @@
                         <p class="flex justify-between"><span>Diploma/S1+</span> <span class="font-bold">15%</span></p>
                     </div>
                 </div>
-                
+
                 <!-- Akses Kesehatan -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-xl font-semibold text-gray-800 mb-4">Akses Kesehatan</h3>
@@ -288,25 +304,255 @@
                                 <li>5 Bidan Desa</li>
                             </ul>
                         </div>
-             
+
                     </div>
                 </div>
             </div>
-            
+            <!-- Monografi -->
+
+            <section id="monografi" class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Monografi</h2>
+                <div class="relative overflow-hidden rounded-lg shadow-md max-w-2xl mx-auto">
+                    <div class="flex transition-transform duration-700 ease-in-out" data-slider="monografi">
+                        <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/monografi/1.jpg"
+                            class="w-full flex-shrink-0" alt="">
+                        <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/monografi/2.jpg"
+                            class="w-full flex-shrink-0" alt="">
+                        <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/monografi/3.jpg"
+                            class="w-full flex-shrink-0" alt="">
+                        <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/monografi/4.jpg"
+                            class="w-full flex-shrink-0" alt="">
+                        <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/monografi/5.jpg"
+                            class="w-full flex-shrink-0" alt="">
+                    </div>
+                    <button class="absolute top-1/2 left-2 bg-white/70 rounded-full p-2" data-prev="monografi">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="absolute top-1/2 right-2 bg-white/70 rounded-full p-2" data-next="monografi">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </section>
+
+
+
+
+
+
+            <!-- Infografis -->
+            <section id="infografis" class="mb-16 ">
+
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Infografis</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+
+
+
+
+                    <!-- SDM -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2">Potensi Sumber Daya Manusia</h3>
+                        <div class="relative overflow-hidden rounded-lg shadow-md mb-6">
+                            <div class="flex transition-transform duration-700 ease-in-out" data-slider="sdm">
+                                <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/infografis/sdm/1.jpg"
+                                    class="w-full flex-shrink-0" alt="">
+                                <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/infografis/sdm/2.jpg"
+                                    class="w-full flex-shrink-0" alt="">
+                            </div>
+                            <button class="absolute top-1/2 left-2 bg-white/70 rounded-full p-2" data-prev="sdm"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <button class="absolute top-1/2 right-2 bg-white/70 rounded-full p-2" data-next="sdm"><i
+                                    class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Podes -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2">Descan (Podes)</h3>
+                        <div class="relative overflow-hidden rounded-lg shadow-md mb-6">
+                            <div class="flex transition-transform duration-700 ease-in-out" data-slider="podes">
+                                <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/infografis/podes/1.jpg"
+                                    class="w-full flex-shrink-0" alt="">
+                                <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/infografis/podes/2.jpg"
+                                    class="w-full flex-shrink-0" alt="">
+                                <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/infografis/podes/3.jpg"
+                                    class="w-full flex-shrink-0" alt="">
+                                <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/infografis/podes/4.jpg"
+                                    class="w-full flex-shrink-0" alt="">
+                            </div>
+                            <button class="absolute top-1/2 left-2 bg-white/70 rounded-full p-2" data-prev="podes"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <button class="absolute top-1/2 right-2 bg-white/70 rounded-full p-2" data-next="podes"><i
+                                    class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+
+
+                    <!-- Lainnya -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2">Descan (Data Lainnya)</h3>
+                        <div class="relative overflow-hidden rounded-lg shadow-md">
+                            <div class="flex transition-transform duration-700 ease-in-out" data-slider="lainnya">
+                                <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/infografis/lainnya/1.jpg"
+                                    class="w-full flex-shrink-0" alt="">
+                                <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/infografis/lainnya/2.jpg"
+                                    class="w-full flex-shrink-0" alt="">
+                            </div>
+                            <button class="absolute top-1/2 left-2 bg-white/70 rounded-full p-2" data-prev="lainnya"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <button class="absolute top-1/2 right-2 bg-white/70 rounded-full p-2" data-next="lainnya"><i
+                                    class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </section>
+
+            <!-- Publikasi -->
+       <!-- Publikasi -->
+<!-- Publikasi -->
+<section id="publikasi" class="mb-16">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">Publikasi Kelurahan Bila 2025</h2>
+    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-6">
+        
+        <!-- Left: Small Thumbnail -->
+        <div class="w-64  flex-shrink-0">
+            <img src="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/publikasi/thumbnail_pub.jpg"
+                alt="Pemandangan Kelurahan Bila"
+                class="rounded-lg shadow-md w-full h-full object-cover">
+        </div>
+
+        <!-- Right: Text + Button -->
+        <div class="flex-1">
+            <p class="text-gray-600 mb-4">
+                Publikasi Potensi Desa merupakan publikasi yang berisi
+data dan indikator strategis mengenai kondisi dan potensi yang
+ada di desa/kelurahan. Data dan indikator terkait kondisi dan
+potensi desa/kelurahan diperoleh dari hasil kegiatan pendataan
+Potensi Desa (Podes) 2024 yang diselenggarakan oleh Badan Pusat
+Statistik (BPS) yang terdiri dari data identitas desa, kondisi
+geografis, infrastruktur, kondisi sosial, bencana alam serta potensi
+perekonomian. Selain itu Booklet ini juga berisi data dari
+desa/kelurahan terkait beberapa pertanyaan yang sering
+dikumpulkan oleh K/L/D/I lain.
+            </p>
+            <a href="https://raw.githubusercontent.com/kelbila/descan/main/bila/assets/publikasi/Publikasi Kelurahan Bila 2025 Sumber Data Podes.pdf"
+                download
+                class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded inline-flex items-center">
+                <i class="fas fa-download mr-2"></i> Unduh Publikasi
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+
+            <!-- Layanan Publik -->
+            <section id="layanan" class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">Layanan Publik</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                    <!-- Kartu 1 -->
+                    <div
+                        class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <div class="bg-blue-600 text-white p-4">
+                            <i class="fas fa-id-card text-2xl mb-2"></i>
+                            <h3 class="text-xl font-semibold">Kartu Tanda Penduduk (KTP)</h3>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-gray-600 mb-4">Pelayanan pembuatan dan perpanjangan KTP Elektronik (e-KTP)
+                                untuk
+                                warga Kelurahan Bila.</p>
+
+                            <button class="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">
+                                Lihat Persyaratan Lengkap
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Kartu 2 -->
+                    <div
+                        class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <div class="bg-green-600 text-white p-4">
+                            <i class="fas fa-home text-2xl mb-2"></i>
+                            <h3 class="text-xl font-semibold">Kartu Keluarga (KK)</h3>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-gray-600 mb-4">Pelayanan pembuatan, perubahan data, dan penerbitan Kartu
+                                Keluarga
+                                baru.</p>
+
+                            <button class="w-full bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">
+                                Lihat Persyaratan Lengkap
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Kartu 3 -->
+                    <div
+                        class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <div class="bg-yellow-600 text-white p-4">
+                            <i class="fas fa-file-alt text-2xl mb-2"></i>
+                            <h3 class="text-xl font-semibold">Surat Keterangan</h3>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-gray-600 mb-4">Pelayanan penerbitan berbagai surat keterangan seperti tidak
+                                mampu, domisili, usaha, dll.</p>
+
+                            <button class="w-full bg-yellow-600 text-white py-2 px-4 rounded hover:bg-yellow-700">
+                                Lihat Jenis Surat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jam Layanan -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Jam Pelayanan</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-medium text-gray-700 mb-2">Hari Kerja</h4>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <p class="flex justify-between border-b pb-2 mb-2">
+                                    <span>Senin-Kamis</span>
+                                    <span class="font-semibold">08:00 - 16:00 WITA</span>
+                                </p>
+                                <p class="flex justify-between">
+                                    <span>Jumat</span>
+                                    <span class="font-semibold">08:00 - 16:30 WITA</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+
+
+                            <h4 class="font-medium text-gray-700 mt-4 mb-2">Layanan Darurat</h4>
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <p class="flex items-center">
+                                    <i class="fas fa-phone-alt text-red-600 mr-2"></i>
+                                    <span class="font-semibold">- (08:00 - 15:00 WITA)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- Peta Wilayah -->
             <div class="bg-white p-6 rounded-lg shadow-md">
                 <h3 class="text-xl font-semibold text-gray-800 mb-4">Peta Wilayah Kelurahan Bila</h3>
                 <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden">
                     <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.581529917933!2d119.8554841!3d-4.3617796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d95f5b8b7b92c33%3A0x89a6bdea870e58e1!2sBila%2C%20Lalabata%2C%20Soppeng%20Regency%2C%20South%20Sulawesi!5e0!3m2!1sen!2sid!4v1691234567890!5m2!1sen!2sid"
-                    width="100%"
-                    height="450"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                  </iframe>
-                  
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.581529917933!2d119.8554841!3d-4.3617796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d95f5b8b7b92c33%3A0x89a6bdea870e58e1!2sBila%2C%20Lalabata%2C%20Soppeng%20Regency%2C%20South%20Sulawesi!5e0!3m2!1sen!2sid!4v1691234567890!5m2!1sen!2sid"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
                 </div>
                 <div class="mt-4 flex justify-between items-center">
                     <p class="text-gray-600">Luas wilayah: <span class="font-bold">3.500 hektar</span></p>
@@ -316,150 +562,93 @@
                 </div>
             </div>
         </section>
-        
-        <!-- Layanan Publik -->
-        <section id="layanan" class="mb-16">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8">Layanan Publik</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                <!-- Kartu 1 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                    <div class="bg-blue-600 text-white p-4">
-                        <i class="fas fa-id-card text-2xl mb-2"></i>
-                        <h3 class="text-xl font-semibold">Kartu Tanda Penduduk (KTP)</h3>
-                    </div>
-                    <div class="p-4">
-                        <p class="text-gray-600 mb-4">Pelayanan pembuatan dan perpanjangan KTP Elektronik (e-KTP) untuk warga Kelurahan Bila.</p>
-                
-                        <button class="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">
-                            Lihat Persyaratan Lengkap
-                        </button>
-                    </div>
-                </div>
-                
-                <!-- Kartu 2 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                    <div class="bg-green-600 text-white p-4">
-                        <i class="fas fa-home text-2xl mb-2"></i>
-                        <h3 class="text-xl font-semibold">Kartu Keluarga (KK)</h3>
-                    </div>
-                    <div class="p-4">
-                        <p class="text-gray-600 mb-4">Pelayanan pembuatan, perubahan data, dan penerbitan Kartu Keluarga baru.</p>
-              
-                        <button class="w-full bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">
-                            Lihat Persyaratan Lengkap
-                        </button>
-                    </div>
-                </div>
-                
-                <!-- Kartu 3 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                    <div class="bg-yellow-600 text-white p-4">
-                        <i class="fas fa-file-alt text-2xl mb-2"></i>
-                        <h3 class="text-xl font-semibold">Surat Keterangan</h3>
-                    </div>
-                    <div class="p-4">
-                        <p class="text-gray-600 mb-4">Pelayanan penerbitan berbagai surat keterangan seperti tidak mampu, domisili, usaha, dll.</p>
-              
-                        <button class="w-full bg-yellow-600 text-white py-2 px-4 rounded hover:bg-yellow-700">
-                            Lihat Jenis Surat
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Jam Layanan -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-xl font-semibold text-gray-800 mb-4">Jam Pelayanan</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <h4 class="font-medium text-gray-700 mb-2">Hari Kerja</h4>
-                        <div class="bg-gray-50 p-4 rounded-lg">
-                            <p class="flex justify-between border-b pb-2 mb-2">
-                                <span>Senin-Kamis</span>
-                                <span class="font-semibold">08:00 - 16:00 WITA</span>
-                            </p>
-                            <p class="flex justify-between">
-                                <span>Jumat</span>
-                                <span class="font-semibold">08:00 - 16:30 WITA</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div>
 
-                        
-                        <h4 class="font-medium text-gray-700 mt-4 mb-2">Layanan Darurat</h4>
-                        <div class="bg-red-50 p-4 rounded-lg">
-                            <p class="flex items-center">
-                                <i class="fas fa-phone-alt text-red-600 mr-2"></i>
-                                <span class="font-semibold">- (08:00 - 15:00 WITA)</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
- 
-        
+
+
+
         <!-- Galeri -->
         <section id="galeri" class="mb-16">
             <div class="flex justify-between items-center mb-8">
                 <h2 class="text-3xl font-bold text-gray-800">Galeri Kegiatan</h2>
-                <a href="#" class="text-blue-600 hover:underline">Lihat Semua <i class="fas fa-arrow-right ml-1"></i></a>
+                <a href="#" class="text-blue-600 hover:underline">Lihat Semua <i
+                        class="fas fa-arrow-right ml-1"></i></a>
             </div>
-            
+
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <a href="#" class="group relative block overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kegiatan 1" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        alt="Kegiatan 1"
+                        class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p class="text-white font-medium">Kegiatan Posyandu</p>
                     </div>
                 </a>
                 <a href="#" class="group relative block overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kegiatan 2" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        alt="Kegiatan 2"
+                        class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p class="text-white font-medium">Pembagian Sembako</p>
                     </div>
                 </a>
                 <a href="#" class="group relative block overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kegiatan 3" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        alt="Kegiatan 3"
+                        class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p class="text-white font-medium">Pelatihan Kerja</p>
                     </div>
                 </a>
                 <a href="#" class="group relative block overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kegiatan 4" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        alt="Kegiatan 4"
+                        class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p class="text-white font-medium">Rapat Warga</p>
                     </div>
                 </a>
                 <a href="#" class="group relative block overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1595143785022-161aa7ef70ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kegiatan 5" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <img src="https://images.unsplash.com/photo-1595143785022-161aa7ef70ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        alt="Kegiatan 5"
+                        class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p class="text-white font-medium">Senam Bersama</p>
                     </div>
                 </a>
                 <a href="#" class="group relative block overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1549576490-b0b4831ef60a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kegiatan 6" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <img src="https://images.unsplash.com/photo-1549576490-b0b4831ef60a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        alt="Kegiatan 6"
+                        class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p class="text-white font-medium">Peringatan HUT RI</p>
                     </div>
                 </a>
                 <a href="#" class="group relative block overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1503551723145-6c040742065b-v2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kegiatan 7" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <img src="https://images.unsplash.com/photo-1503551723145-6c040742065b-v2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        alt="Kegiatan 7"
+                        class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p class="text-white font-medium">Kegiatan PKK</p>
                     </div>
                 </a>
                 <a href="#" class="group relative block overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kegiatan 8" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        alt="Kegiatan 8"
+                        class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p class="text-white font-medium">Pelatihan Komputer</p>
                     </div>
                 </a>
             </div>
-            
+
             <div class="mt-8 text-center">
                 <button class="bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700 inline-flex items-center">
                     <i class="fas fa-images mr-2"></i> Lihat Galeri Lengkap
@@ -467,7 +656,7 @@
             </div>
         </section>
     </main>
-    
+
     <!-- Kontak & Footer -->
     <footer id="kontak" class="bg-gray-800 text-white pt-12 pb-6">
         <div class="container mx-auto px-4">
@@ -493,43 +682,43 @@
                             <p>Senin-Jumat: 08.00-15.00 WITA</p>
                         </div>
                     </div>
-                    
+
                     <div class="mt-6">
                         <h4 class="font-medium mb-2">Media Sosial</h4>
                         <div class="flex space-x-4">
-                            <a href="#" class="bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700">
+                            <a href="#"
+                                class="bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="bg-blue-400 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-500">
+                            <a href="#"
+                                class="bg-blue-400 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-500">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="#" class="bg-red-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-700">
+                            <a href="#"
+                                class="bg-red-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-700">
                                 <i class="fab fa-youtube"></i>
                             </a>
-                            <a href="#" class="bg-pink-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-700">
+                            <a href="#"
+                                class="bg-pink-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-700">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Peta -->
                 <div>
                     <h3 class="text-xl font-bold mb-4">Lokasi Kantor Kelurahan</h3>
                     <div class="aspect-w-16 aspect-h-9 bg-gray-700 rounded-lg overflow-hidden">
-                        <iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.262625126953!2d119.8772613!3d-4.3482378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d95f429bfce3715%3A0x42a695dae82f474e!2sKantor%20Kelurahan%20Bila!5e0!3m2!1sid!2sid!4v1691234567890!5m2!1sid!2sid" 
-  width="100%" 
-  height="250" 
-  style="border:0;" 
-  allowfullscreen="" 
-  loading="lazy" 
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.262625126953!2d119.8772613!3d-4.3482378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d95f429bfce3715%3A0x42a695dae82f474e!2sKantor%20Kelurahan%20Bila!5e0!3m2!1sid!2sid!4v1691234567890!5m2!1sid!2sid"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
 
                     </div>
                 </div>
-                
+
                 <!-- Link Cepat -->
                 <div>
                     <h3 class="text-xl font-bold mb-4">Link Cepat</h3>
@@ -542,24 +731,27 @@
                         <a href="#" class="text-gray-300 hover:text-white hover:underline">Pengumuman</a>
                         <a href="#" class="text-gray-300 hover:text-white hover:underline">Kontak Darurat</a>
                     </div>
-                    
+
                     <div class="mt-6">
                         <h4 class="font-medium mb-2">Unduh Dokumen</h4>
                         <div class="flex flex-wrap gap-2">
-                            <button class="bg-gray-700 hover:bg-gray-600 text-white py-1 px-3 rounded text-sm flex items-center">
+                            <button
+                                class="bg-gray-700 hover:bg-gray-600 text-white py-1 px-3 rounded text-sm flex items-center">
                                 <i class="fas fa-file-pdf mr-1 text-red-500"></i> Profil Kelurahan
                             </button>
-                            <button class="bg-gray-700 hover:bg-gray-600 text-white py-1 px-3 rounded text-sm flex items-center">
+                            <button
+                                class="bg-gray-700 hover:bg-gray-600 text-white py-1 px-3 rounded text-sm flex items-center">
                                 <i class="fas fa-file-excel mr-1 text-green-500"></i> Data Statistik
                             </button>
-                            <button class="bg-gray-700 hover:bg-gray-600 text-white py-1 px-3 rounded text-sm flex items-center">
+                            <button
+                                class="bg-gray-700 hover:bg-gray-600 text-white py-1 px-3 rounded text-sm flex items-center">
                                 <i class="fas fa-file-pdf mr-1 text-red-500"></i> Layanan Publik
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="border-t border-gray-700 pt-6">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <p>&copy; 2025 Kelurahan Bila, Kec. Lalabata, Kab. Soppeng. All rights reserved.</p>
@@ -572,29 +764,53 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-6 right-6 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg hidden items-center justify-center hover:bg-blue-700">
+    <button id="back-to-top"
+        class="fixed bottom-6 right-6 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg hidden items-center justify-center hover:bg-blue-700">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
+        function initSlider(name) {
+            const slider = document.querySelector(`[data-slider="${name}"]`);
+            const slides = slider.children;
+            let index = 0;
+            function showSlide(i) {
+                slider.style.transform = `translateX(-${i * 100}%)`;
+            }
+            document.querySelector(`[data-prev="${name}"]`).addEventListener('click', () => {
+                index = (index - 1 + slides.length) % slides.length;
+                showSlide(index);
+            });
+            document.querySelector(`[data-next="${name}"]`).addEventListener('click', () => {
+                index = (index + 1) % slides.length;
+                showSlide(index);
+            });
+            setInterval(() => {
+                index = (index + 1) % slides.length;
+                showSlide(index);
+            }, 4000);
+        }
+        ['monografi', 'sdm', 'podes', 'lainnya'].forEach(initSlider);
+    </script>
+    <script>
         // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
         });
-        
+
         // Toggle dropdown in mobile
         function toggleDropdown(id) {
             document.getElementById(id).classList.toggle('hidden');
         }
-        
+
         // Back to top button
         const backToTopButton = document.getElementById('back-to-top');
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             if (window.pageYOffset > 300) {
                 backToTopButton.classList.remove('hidden');
                 backToTopButton.classList.add('flex');
@@ -603,25 +819,25 @@
                 backToTopButton.classList.remove('flex');
             }
         });
-        
-        backToTopButton.addEventListener('click', function() {
+
+        backToTopButton.addEventListener('click', function () {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-        
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
-                    
+
                     // Close mobile menu if open
                     const mobileMenu = document.getElementById('mobile-menu');
                     if (!mobileMenu.classList.contains('hidden')) {
@@ -630,15 +846,15 @@
                 }
             });
         });
-        
+
         // Charts
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Population Chart
             const populationCtx = document.getElementById('populationChart').getContext('2d');
             const populationChart = new Chart(populationCtx, {
                 type: 'line',
                 data: {
-                    labels: [ '2021', '2022', '2023', '2024', '2025'],
+                    labels: ['2021', '2022', '2023', '2024', '2025'],
                     datasets: [{
                         label: 'Jumlah Penduduk',
                         data: [7373, 7355, 7422, 7539, 7802],
@@ -664,7 +880,7 @@
                     }
                 }
             });
-            
+
             // Gender Chart
             const genderCtx = document.getElementById('genderChart').getContext('2d');
             const genderChart = new Chart(genderCtx, {
@@ -691,7 +907,7 @@
                     cutout: '70%'
                 }
             });
-            
+
             // Age Chart
             const ageCtx = document.getElementById('ageChart').getContext('2d');
             const ageChart = new Chart(ageCtx, {
@@ -719,7 +935,7 @@
                     }
                 }
             });
-            
+
             // Occupation Chart
             const occupationCtx = document.getElementById('occupationChart').getContext('2d');
             const occupationChart = new Chart(occupationCtx, {
@@ -747,7 +963,7 @@
                     }
                 }
             });
-            
+
             // Education Chart
             const educationCtx = document.getElementById('educationChart').getContext('2d');
             const educationChart = new Chart(educationCtx, {
@@ -781,18 +997,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
